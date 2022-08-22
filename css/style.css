@@ -190,7 +190,6 @@ body {
 .landing {
     background-image: url(../images/mountain.jpg);
     background-size: cover;
-    /* width: 100%; */
     height: calc(100vh - 61px);
     position: relative;
 }
@@ -215,6 +214,7 @@ body {
 .landing .intro-text p {
     line-height: 1.8;
     font-size: 19px;
+    font-weight: 600;
 }
 
 /* End Landing */
@@ -242,6 +242,7 @@ body {
 .features .feet h3 {
     font-weight: 800px;
     margin: 30px 0;
+    cursor: pointer;
 }
 
 .features .feet p {
@@ -288,8 +289,11 @@ body {
 
 .services .services-content .srv .text h3 {
     margin: 0;
+    cursor: pointer;
 }
-
+.services .services-content .srv .text h3:hover{
+    color: var(--main-color);
+}
 .services .services-content .srv .text p {
     color: #444;
     font-weight: 300;
@@ -297,6 +301,7 @@ body {
 }
 
 .services .services-content .image {
+    margin-top: 63px;
     text-align: center;
     width: 100%;
     position: relative;
@@ -340,8 +345,11 @@ body {
 
 .portfolio .portfolio-content .card {
     background-color: #fff;
+    opacity: 0.8;
 }
-
+.portfolio .portfolio-content .card:hover{
+    opacity: 1;
+}
 @media (max-width:767px) {
     .portfolio .portfolio-content .card {
         text-align: center;
@@ -358,8 +366,11 @@ body {
 
 .portfolio .portfolio-content .card .info h3 {
     margin: 0;
+    cursor: pointer;
 }
-
+.portfolio .portfolio-content .card .info h3:hover{
+    color: var(--main-color);
+}
 .portfolio .portfolio-content .card .info p {
     color: #777;
     margin-bottom: 20px;
@@ -411,20 +422,23 @@ body {
     top: -40px;
     left: -20px;
     height: calc(100% + 80px);
+    width: 50px;
     z-index: -1;
-    background-color: #126ac2;
+    background-color: var(--main-color);
 }
 
 .about-content .image::after {
     content: "";
     position: absolute;
     top: -40px;
-    right: -150px;
-    width: 120px;
+    right: -126px;
+    width: 87px;
     height: 300px;
     border-bottom: var(--main-color);
     border-left: var(--main-color);
     z-index: -1;
+    border-bottom: 50px solid var(--main-color);
+    border-left: 100px solid var(--main-color);
 }
 
 .about-content .image img {
@@ -507,8 +521,11 @@ body {
 .contact .info .social i {
     margin-left: 10px;
     color: var(--secondary-color);
+    cursor: pointer;
 }
-
+.contact .info .social i:hover{
+    color: var(--main-color);
+}
 /* End Contact */
 
 /* start footer */
